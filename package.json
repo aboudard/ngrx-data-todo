@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
+    "dbmock": "json-server --watch server.json --port 3004 --routes routes.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
