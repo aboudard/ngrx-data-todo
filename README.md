@@ -2,7 +2,7 @@
 
 A simple project using Angular NgRx Data and json-server backend.
 Described in this article : https://medium.com/@coco.boudard/ngrx-data-and-json-server-mock-services-f4d9d76aa654
-This project is using [Angular CLI](https://github.com/angular/angular-cli) version 9.1.x
+This project is using [Angular CLI](https://github.com/angular/angular-cli) version 10.2.x
 
 ## Development server
 

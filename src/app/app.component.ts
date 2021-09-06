@@ -33,6 +33,6 @@ export class AppComponent implements OnInit {
       select(selectCount)
     );
     this.todosService.getAll();
-    this.todosService.add({active: true, description: "added one", title: "added one"});
+    // this.todosService.add({active: true, description: "added one", title: "added one"});
   }
 }
