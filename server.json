@@ -58,18 +58,6 @@
       "description": "added one",
       "title": "added one",
       "id": 10
-    },
-    {
-      "active": true,
-      "description": "added two",
-      "title": "added two",
-      "id": 11
-    },
-    {
-      "active": true,
-      "description": "added one",
-      "title": "added one",
-      "id": 12
     }
   ]
 }
