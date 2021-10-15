@@ -1,35 +1,35 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { MockStore, provideMockStore } from '@ngrx/store/testing';
+import { AppState } from './reducers';
+import { TodosService } from './services/todos.service';
+import { createSpyFromClass, Spy } from 'jasmine-auto-spies'
 
 describe('AppComponent', () => {
+
+  let componentUnderTest: AppComponent;
+  let storeSpy: MockStore<Partial<AppState>>;
+
+
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule
       ],
-      declarations: [
-        AppComponent
+      providers: [
+        AppComponent,
+        provideMockStore(),
+        { provide: TodosService, useValue: createSpyFromClass(TodosService) },
       ],
     }).compileComponents();
+    componentUnderTest = TestBed.inject(AppComponent);
+    storeSpy = TestBed.inject(MockStore);
   }));
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+    expect(componentUnderTest).toBeTruthy();
   });
 
-  it(`should have as title 'ngRx1'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ngRx1');
-  });
 
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ngRx1!');
-  });
 });
