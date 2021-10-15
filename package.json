@@ -7,6 +7,7 @@
     "dbmock": "json-server --watch server.json --port 3004 --routes routes.json",
     "build": "ng build",
     "test": "ng test",
+    "test:ci": "ng test --code-coverage --watch=false --browsers ChromeHeadlessNoSandbox",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
