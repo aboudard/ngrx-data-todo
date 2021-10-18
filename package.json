@@ -6,6 +6,7 @@
     "start": "ng serve --proxy-config proxy.conf.json",
     "dbmock": "json-server --watch server.json --port 3004 --routes routes.json",
     "build": "ng build",
+    "build:pages": "ng build --base-href /ngrx-data-todo/",
     "test": "ng test",
     "test:ci": "ng test --code-coverage --watch=false --browsers ChromeHeadlessNoSandbox",
     "lint": "ng lint",
