@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: npm i
-      - run: npm run build --base-href https://aboudard.github.io/ngrx-data-todo/ --if-present
+      - run: npm run build --base-href /ngrx-data-todo/ --if-present
       - run: npm run test:ci
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
