@@ -1,11 +1,11 @@
-import { Todo } from './dto/todo';
-import { TodosService } from './services/todos.service';
-import { increment } from './actions/counter.actions';
-import { AppState } from './reducers/index';
 import { Component, OnInit } from '@angular/core';
-import { Store, select } from '@ngrx/store';
+import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import { increment } from './actions/counter.actions';
+import { Todo } from './dto/todo';
+import { AppState } from './reducers/index';
 import { selectCount } from './selectors/counter.selectors';
+import { TodosService } from './services/todos.service';
 
 @Component({
   selector: 'app-root',

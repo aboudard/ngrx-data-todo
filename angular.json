@@ -22,7 +22,9 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [ "src/custom-theme.scss"],
+            "styles": [
+              "src/custom-theme.scss"
+            ],
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
@@ -94,15 +96,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -123,7 +121,7 @@
   },
   "defaultProject": "ngRx1",
   "cli": {
-    "defaultCollection": "@ngrx/schematics",
+    "defaultCollection": "@angular-eslint/schematics",
     "analytics": false
   }
 }

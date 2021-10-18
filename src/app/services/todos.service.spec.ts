@@ -1,9 +1,8 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
-import { EntityCollectionServiceElementsFactory, EntityDataModule } from '@ngrx/data';
+import { EntityDataModule } from '@ngrx/data';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { provideMockStore } from '@ngrx/store/testing';
-import { createSpyFromClass } from 'jasmine-auto-spies';
 import { entityConfig } from '../store/entity-metadata';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 

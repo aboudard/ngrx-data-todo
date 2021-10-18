@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { MockStore, provideMockStore } from '@ngrx/store/testing';
 import { AppState } from './reducers';
 import { TodosService } from './services/todos.service';
-import { createSpyFromClass, Spy } from 'jasmine-auto-spies'
+import { createSpyFromClass } from 'jasmine-auto-spies'
 
 describe('AppComponent', () => {
 
