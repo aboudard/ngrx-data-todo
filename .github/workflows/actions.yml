@@ -29,3 +29,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist/ngRx1 # The folder the action should deploy.
