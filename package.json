@@ -6,7 +6,8 @@
     "start": "ng serve --proxy-config proxy.conf.json",
     "dbmock": "json-server --watch server.json --port 3004 --routes routes.json",
     "build": "ng build",
-    "build:pages": "ng build --base-href /ngrx-data-todo/",
+    "build:stats": "ng build --configuration production --stats-json",
+    "build:pages": "ng build --configuration production --base-href /ngrx-data-todo/",
     "test": "ng test",
     "test:ci": "ng test --code-coverage --watch=false --browsers ChromeHeadlessNoSandbox",
     "lint": "ng lint",
@@ -66,6 +67,7 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
     "ts-node": "~7.0.0",
-    "typescript": "~4.3.5"
+    "typescript": "~4.3.5",
+    "webpack-bundle-analyzer": "4.5.0"
   }
 }
