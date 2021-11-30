@@ -1,60 +1,71 @@
 {
   "todos": [
     {
+      "category": "divers",
       "id": 0,
       "description": "pop pop opopopo popo po",
       "title": "Bonjour les chats",
       "active": true
     },
     {
+      "category": "angular",
       "id": 1,
       "description": "rere rerere rere rerer ererer",
       "title": "Angular best practices",
       "active": true
     },
     {
+      "category": "divers",
       "id": 2,
       "description": "ytyt ytyty tytyty tytyty tyttyt yty",
       "title": "Java avec les pingouins",
       "active": false
     },
     {
+      "category": "divers",
       "title": "Spring Boot for my crocodile",
       "description": "special edition teeth-proof for big mouth",
       "active": true,
       "id": 3
     },
     {
+      "category": "angular",
       "title": "Beer is not my first name",
-      "description": "autre truc",
-      "active": null,
+      "description": "autre truc angular",
+      "active": false,
       "id": 4
     },
     {
+      "category": "divers",
       "description": "chhchc ch ch hh ch hchchch ch chchch hc hc",
       "title": "PHP pour mon chat",
+      "active": false,
       "id": 5
     },
     {
+      "category": "divers",
       "title": "That's barealy a Todo List right ?",
       "description": "the brand new description",
       "active": false,
       "id": 7
     },
     {
+      "category": "divers",
       "description": "ititit ititit it it it it it ititit itit ",
       "title": "Do something about it",
       "id": 8,
       "active": true
     },
     {
+      "category": "angular",
       "title": "test meuh",
       "description": "er ererererer er e rer ererer er",
       "active": true,
       "id": 9
     },
     {
-      "active": true,
+      "category": "divers",
+      "active": false,
       "description": "added one",
       "title": "added one",
       "id": 10

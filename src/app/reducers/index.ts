@@ -10,7 +10,6 @@ export interface AppState {
 }
 
 export const reducers: ActionReducerMap<AppState> = {
-
   counter: fromCounter.reducer,
 };
 
